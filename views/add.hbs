@@ -1,0 +1,36 @@
+<h3 style="text-align: center;">Добавить курсы</h3>
+
+<div class="row">
+    <form action="/add" method="post" class="col s12">
+
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="js-course-name" type="text" name="title" class="validate" required max="100">
+                <label for="js-course-name">Название</label>
+                <span class="helper-text" data-error="Введите название"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col l6">
+                <input id="js-course-price" type="number" name="price" class="validate" required>
+                <label for="js-course-price">Цена</label>
+                <span class="helper-text" data-error="Введите цену"></span>
+            </div>
+            <div class="input-field col l6">
+                <input id="js-course-img" type="text" name="img" class="validate" required>
+                <label for="js-course-img">URL картинки</label>
+                <span class="helper-text" data-error="Введите URL картинки"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Добавить
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
